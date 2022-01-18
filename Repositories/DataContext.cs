@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Domain;
 
 namespace Repositories
 {
@@ -9,6 +10,6 @@ namespace Repositories
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
 
-
+        public DbSet<Student> Students { get; set; }
     }
 }

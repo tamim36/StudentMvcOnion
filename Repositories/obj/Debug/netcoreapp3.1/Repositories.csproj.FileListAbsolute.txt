@@ -1,0 +1,16 @@
+C:\Users\BS761\source\repos\StudentMVConion\Repositories\obj\Debug\netcoreapp3.1\Repositories.csproj.AssemblyReference.cache
+C:\Users\BS761\source\repos\StudentMVConion\Repositories\obj\Debug\netcoreapp3.1\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BS761\source\repos\StudentMVConion\Repositories\obj\Debug\netcoreapp3.1\Repositories.AssemblyInfoInputs.cache
+C:\Users\BS761\source\repos\StudentMVConion\Repositories\obj\Debug\netcoreapp3.1\Repositories.AssemblyInfo.cs
+C:\Users\BS761\source\repos\StudentMVConion\Repositories\obj\Debug\netcoreapp3.1\Repositories.csproj.CoreCompileInputs.cache
+C:\Users\BS761\source\repos\StudentMVConion\Repositories\bin\Debug\netcoreapp3.1\Repositories.deps.json
+C:\Users\BS761\source\repos\StudentMVConion\Repositories\bin\Debug\netcoreapp3.1\Repositories.runtimeconfig.json
+C:\Users\BS761\source\repos\StudentMVConion\Repositories\bin\Debug\netcoreapp3.1\Repositories.runtimeconfig.dev.json
+C:\Users\BS761\source\repos\StudentMVConion\Repositories\bin\Debug\netcoreapp3.1\Repositories.dll
+C:\Users\BS761\source\repos\StudentMVConion\Repositories\bin\Debug\netcoreapp3.1\Repositories.pdb
+C:\Users\BS761\source\repos\StudentMVConion\Repositories\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Users\BS761\source\repos\StudentMVConion\Repositories\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Users\BS761\source\repos\StudentMVConion\Repositories\obj\Debug\netcoreapp3.1\Repositories.csproj.CopyComplete
+C:\Users\BS761\source\repos\StudentMVConion\Repositories\obj\Debug\netcoreapp3.1\Repositories.dll
+C:\Users\BS761\source\repos\StudentMVConion\Repositories\obj\Debug\netcoreapp3.1\Repositories.pdb
+C:\Users\BS761\source\repos\StudentMVConion\Repositories\obj\Debug\netcoreapp3.1\Repositories.genruntimeconfig.cache
