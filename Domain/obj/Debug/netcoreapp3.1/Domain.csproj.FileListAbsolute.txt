@@ -7,4 +7,3 @@ C:\Users\BS761\source\repos\StudentMVConion\Domain\obj\Debug\netcoreapp3.1\Domai
 C:\Users\BS761\source\repos\StudentMVConion\Domain\obj\Debug\netcoreapp3.1\Domain.csproj.CoreCompileInputs.cache
 C:\Users\BS761\source\repos\StudentMVConion\Domain\obj\Debug\netcoreapp3.1\Domain.dll
 C:\Users\BS761\source\repos\StudentMVConion\Domain\obj\Debug\netcoreapp3.1\Domain.pdb
-C:\Users\BS761\source\repos\StudentMVConion\Domain\obj\Debug\netcoreapp3.1\Domain.csproj.AssemblyReference.cache

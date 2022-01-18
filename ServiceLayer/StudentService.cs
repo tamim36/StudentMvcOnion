@@ -13,7 +13,7 @@ namespace ServiceLayer
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<Student>> GetStudents()
+        public async Task<IEnumerable<Student>> GetStudents()
         {
             throw new NotImplementedException();
         }
