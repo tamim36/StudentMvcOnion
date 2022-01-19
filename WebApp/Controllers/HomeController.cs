@@ -25,17 +25,17 @@ namespace WebApp.Controllers
         public async Task<IActionResult> Index()
         {
             IEnumerable<Student> students = await studentService.GetStudents();
-            return View();
+            return View(students);
         }
 
-        public IActionResult AddStudent(string name, int age)
+        public JsonResult AddStudent(string name, int age)
         {
             Student student = new Student();
             student.Name = name;
             student.Age = age;
 
             studentService.AddStudents(student);
-            return Ok();
+            return Json("Successful!");
         }
 
         public IActionResult Privacy()

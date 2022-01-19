@@ -1,8 +1,56 @@
-﻿@{
+﻿@model List<Domain.Student>
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Student Dashboard</h1>
+
+    <table style=" background-repeat:no-repeat; width:450px;margin:0;" cellpadding="0" cellspacing="0" border="0">
+        <thead>
+            <tr style="height:40px; width:450px; margin:0;">
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var student in Model)
+           {
+               <tr>
+                   <td>@student.Name</td>
+                   <td>@student.Age</td>
+               </tr>
+           }
+        </tbody>
+    </table>
+
+    <div style=" background-repeat:no-repeat; width:450px;margin:0; padding-top:20px;" cellpadding="0" cellspacing="0" border="0">
+        <h5>Add new student</h5>
+        <div style="padding:8px;">
+            <span style="padding-left:10px;">Name</span>
+            <input style="padding:5px;margin:20px;" type="text" id="name" placeholder="input name here" />
+        </div>
+        <div>
+            <span style="padding-left:10px;">Age</span>
+            <input style="margin:20px;" id="age" type="number" placeholder="input age here" />
+        </div>
+
+        <div>
+            <input style="margin:20px;" id="btnSubmit" type="button" value="Submit" onclick="AddStudent()" />
+        </div>
+
+    </div>
 </div>
+
+<script>
+    function AddStudent(){
+        let name = $("#name").val();
+        let age = $("#age").val();
+
+        let url =   `Home/AddStudent?name=${name}&age=${age}`;
+
+        $.get(url, function(data, status){
+            alert(data);
+        });
+    }
+</script>
