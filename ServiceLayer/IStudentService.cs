@@ -8,7 +8,7 @@ namespace ServiceLayer
 {
     public interface IStudentService
     {
-        void AddStudents<T>(T student) where T : class;
+        void AddStudents(Student student);
         Task<IEnumerable<Student>> GetStudents();
     }
 }

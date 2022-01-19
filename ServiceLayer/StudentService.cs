@@ -1,4 +1,5 @@
 ﻿using Domain;
+using Repositories;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,14 +9,20 @@ namespace ServiceLayer
 {
     public class StudentService : IStudentService
     {
-        public void AddStudents<T>(T student) where T : class
+        private readonly IStudentRepo studentRepo;
+        public StudentService(IStudentRepo studentRepo)
         {
-            throw new NotImplementedException();
+            this.studentRepo = studentRepo;
+        }
+
+        public void AddStudents(Student student)
+        {
+            studentRepo.Add<Student>(student);
         }
 
         public async Task<IEnumerable<Student>> GetStudents()
         {
-            throw new NotImplementedException();
+            return await studentRepo.GetStudents();
         }
     }
 }
