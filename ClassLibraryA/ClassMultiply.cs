@@ -4,7 +4,8 @@ using System.Text;
 
 namespace ClassLibraryA
 {
-    internal class ClassMultiply
+    public class ClassMultiply
     {
+        public int MultiplyNums(int a, int b) { return a * b; }
     }
 }

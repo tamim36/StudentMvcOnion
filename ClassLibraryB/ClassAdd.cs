@@ -4,7 +4,8 @@ using System.Text;
 
 namespace ClassLibraryB
 {
-    internal class ClassAdd
+    public class ClassAdd
     {
+        public int AddNums(int a, int b) { return a + b; }
     }
 }

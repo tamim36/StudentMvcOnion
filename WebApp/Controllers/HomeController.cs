@@ -5,6 +5,7 @@ using ServiceLayer;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using WebApp.Models;
@@ -41,6 +42,14 @@ namespace WebApp.Controllers
         public IActionResult Privacy()
         {
             return View();
+        }
+
+        [HttpGet]
+        public JsonResult MultiplyByReflection(int a, int b)
+        {
+            string Source = @"C:\Users\BS761\source\repos\StudentMVConion\ClassLibraryA\bin\Debug\netcoreapp3.1";
+            var Files = Directory.GetFiles(Source, "*.dll", SearchOption.AllDirectories).FirstOrDefault();
+            return Json("Ok");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

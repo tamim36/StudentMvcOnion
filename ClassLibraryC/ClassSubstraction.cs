@@ -4,7 +4,8 @@ using System.Text;
 
 namespace ClassLibraryC
 {
-    internal class ClassSubstraction
+    public class ClassSubstraction
     {
+        public int SubstractNums(int a, int b) { return Math.Abs(a - b); }
     }
 }
