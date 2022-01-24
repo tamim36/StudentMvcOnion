@@ -4,6 +4,35 @@
 }
 
 <div class="text-center">
+    <h1 class="display-4">Reflection</h1>
+    <div style=" background-repeat:no-repeat; width:450px;margin:0; padding-top:20px;" cellpadding="0" cellspacing="0" border="0">
+        <h5>Input Number</h5>
+        <div style="padding:8px;">
+            <span style="padding-left:10px;">Number 1</span>
+            <input style="padding:5px;margin:20px;" type="number" id="num1" placeholder="input number here" />
+        </div>
+        <div>
+            <span style="padding-left:10px;">Number 2</span>
+            <input style="margin:20px;" id="num2" type="number" placeholder="input number here" />
+        </div>
+
+        <div>
+            <input style="margin:20px;" id="btnAdd" type="button" value="Add Numbers" onclick="AddNumbers()" />
+            <br />
+            <input style="margin:20px;" id="btnMultiply" type="button" value="Multiply Numbers" onclick="MultiplyNumbers()" />
+            <br />
+            <input style="margin:20px;" id="btnSubstraction" type="button" value="Substract Numbers" onclick="SubstractNumbers()" />
+        </div>
+
+        <div>
+            <span style="padding-left:10px;">Result</span>
+            <input style="margin:20px;" id="result" type="text" readonly/>
+        </div>
+
+    </div>
+
+
+
     <h1 class="display-4">Student Dashboard</h1>
 
     <table style=" background-repeat:no-repeat; width:450px;margin:0;" cellpadding="0" cellspacing="0" border="0">
@@ -43,6 +72,48 @@
 </div>
 
 <script>
+    function AddNumbers(){
+        let num1 = $("#num1").val();
+        let num2 = $("#num2").val();
+
+        let url = `/Home/AddByReflection?a=${num1}&b=${num2}`;
+
+        $.get(url, function(data, status){
+            if (data == "Error")
+                alert('Something went wrong!');
+            else
+                $("#result").val(data);
+        });
+    }
+
+    function SubstractNumbers(){
+        let num1 = $("#num1").val();
+        let num2 = $("#num2").val();
+
+        let url = `/Home/SubstractByReflection?a=${num1}&b=${num2}`;
+
+        $.get(url, function(data, status){
+            if (data == "Error")
+                alert('Something went wrong!');
+            else
+                $("#result").val(data);
+        });
+    }
+
+    function MultiplyNumbers(){
+        let num1 = $("#num1").val();
+        let num2 = $("#num2").val();
+
+        let url = `/Home/MultiplyByReflection?a=${num1}&b=${num2}`;
+
+        $.get(url, function(data, status){
+            if (data == "Error")
+                alert('Something went wrong!');
+            else
+                $("#result").val(data);
+        });
+    }
+
     function AddStudent(){
         let name = $("#name").val();
         let age = $("#age").val();

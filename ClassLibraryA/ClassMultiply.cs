@@ -6,6 +6,6 @@ namespace ClassLibraryA
 {
     public class ClassMultiply
     {
-        public int MultiplyNums(int a, int b) { return a * b; }
+        public static int MultiplyNums(int a, int b) { return a * b; }
     }
 }
