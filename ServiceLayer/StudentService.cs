@@ -17,12 +17,12 @@ namespace ServiceLayer
 
         public void AddStudents(Student student)
         {
-            studentRepo.Add<Student>(student);
+            studentRepo.Add(student);
         }
 
         public async Task<IEnumerable<Student>> GetStudents()
         {
-            return await studentRepo.GetStudents();
+            return await studentRepo.GetAll<Student>();
         }
     }
 }

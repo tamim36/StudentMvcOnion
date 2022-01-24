@@ -9,6 +9,6 @@ namespace Repositories
     public interface IStudentRepo
     {
         void Add<T>(T student) where T : class;
-        Task<IEnumerable<Student>> GetStudents();
+        Task<IEnumerable<T>> GetAll<T>();
     }
 }

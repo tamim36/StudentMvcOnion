@@ -22,9 +22,9 @@ namespace Repositories
             context.SaveChanges();
         }
 
-        public async Task<IEnumerable<Student>> GetStudents()
+        public async Task<IEnumerable<T>> GetAll<T>()
         {
-            return await context.Students.ToListAsync();
+            return (IEnumerable<T>)await context.Students.ToListAsync();
         }
     }
 }
